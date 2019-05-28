@@ -1,9 +1,11 @@
-LIBRARY_DIR=../..
+#LIBRARY_DIR=../..
+LIBRARY_DIR=/Users/haoran/Documents/GitHub/ITensor/
 
 ifdef app
 APP=$(app)
 else
-APP=one
+#APP=one
+APP=01_tutorial_code
 endif
 
 CCFILES=$(APP).cc

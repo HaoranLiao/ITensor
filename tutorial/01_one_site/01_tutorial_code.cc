@@ -21,7 +21,12 @@ int main()
     //Set first element to 1.
     psi.set(s=1,1);
 
-    PrintData(psi);
+    PrintData(psi);  
+
+//     psi = 
+// ITensor ord=1: (2|id=634|s) 
+// {norm=1.00 (Dense Real)}
+// (1) 1.0000000   
     
     //
     // Operators 
@@ -39,6 +44,19 @@ int main()
     PrintData(Sz);
     PrintData(Sx);
 
+// Sz = 
+// ITensor ord=2: (2|id=634|s) (2|id=634|s)' 
+// {norm=0.71 (Dense Real)}
+// (1,1) 0.5000000
+// (2,2) -0.500000
+
+// Sx = 
+// ITensor ord=2: (2|id=634|s) (2|id=634|s)' 
+// {norm=0.71 (Dense Real)}
+// (2,1) 0.5000000
+// (1,2) 0.5000000
+
+
     //
     // Product Sx * phi 
     //
@@ -48,6 +66,11 @@ int main()
     phi.noPrime();
 
     PrintData(phi);
+
+//     phi = 
+// ITensor ord=1: (2|id=634|s) 
+// {norm=0.50 (Dense Real)}
+// (2) 0.5000000
 
     //
     // 45* angle spin
@@ -61,6 +84,12 @@ int main()
 
     PrintData(psi);
 
+//     psi = 
+// ITensor ord=1: (2|id=634|s) 
+// {norm=1.00 (Dense Real)}
+// (1) 0.9238795
+// (2) 0.3826834
+
     //
     // Expectation values
     //
@@ -72,6 +101,9 @@ int main()
 
     println("<Sz> = ", zz);
     println("<Sx> = ", xx);
+
+//     <Sz> = 0.353553
+// <Sx> = 0.353553
 
     return 0;
     }

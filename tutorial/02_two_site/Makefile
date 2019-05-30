@@ -1,4 +1,5 @@
-LIBRARY_DIR=../..
+#LIBRARY_DIR=../..
+LIBRARY_DIR=/Users/haoran/Documents/GitHub/ITensor/
 
 ifdef app
 APP=$(app)

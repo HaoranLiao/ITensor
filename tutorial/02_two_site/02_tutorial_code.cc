@@ -34,8 +34,8 @@ int main()
     // initialized to a singlet
     //
     
-    auto s1 = Index("s1",2,Site);
-    auto s2 = Index("s2",2,Site);
+    auto s1 = Index(2, "s1");
+    auto s2 = Index(2, "s2");
 
     auto psi = ITensor(s1,s2); //default initialized to zero
 
@@ -80,3 +80,29 @@ int main()
 
     return 0;
     }
+
+
+// psi = 
+// ITensor ord=2: (2|id=862|s1) (2|id=140|s2) 
+// {norm=1.00 (Dense Real)}
+// (2,1) -0.707107
+// (1,2) 0.7071068
+
+// Sz1 = 
+// ITensor ord=2: (2|id=862|s1) (2|id=862|s1)' 
+// {norm=0.71 (Dense Real)}
+// (1,1) 0.5000000
+// (2,2) -0.500000
+
+// Sp1 = 
+// ITensor ord=2: (2|id=862|s1) (2|id=862|s1)' 
+// {norm=1.00 (Dense Real)}
+// (2,1) 1.0000000
+
+// Sm1 = 
+// ITensor ord=2: (2|id=862|s1) (2|id=862|s1)' 
+// {norm=1.00 (Dense Real)}
+// (1,2) 1.0000000
+
+// E = -0.75
+

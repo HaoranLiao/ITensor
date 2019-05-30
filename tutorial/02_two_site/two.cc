@@ -49,7 +49,7 @@ int main()
     auto psi_init = randomITensor(s1,s2);
     psi_init /= norm(psi_init);
 
-    //PrintData(psi);
+    PrintData(psi_init);
 
     //
     // Single-site operators
